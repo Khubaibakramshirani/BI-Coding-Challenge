@@ -1,9 +1,9 @@
 ```markdown
-BounceInsights Coding Challenge
+# BounceInsights Coding Challenge
 
 This repository contains the implementation of a RAG (Retrieval-Augmented Generation) system using FastAPI for backend development and React with TypeScript for the frontend. The project allows users to ask questions and get responses from a RAG-based system.
 
-Project Structure
+# Project Structure
    
    ```
       JB/
@@ -39,7 +39,8 @@ Project Structure
 
 ### Backend Setup
 
-1. Clone the repository:
+1. Clone the respository:
+
    ```bash
    git clone https://github.com/Khubaibakramshirani/BounceInsights-Coding-Challenge.git
    cd BounceInsights-Coding-Challenge/backend
