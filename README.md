@@ -4,30 +4,30 @@ BounceInsights Coding Challenge
 This repository contains the implementation of a RAG (Retrieval-Augmented Generation) system using FastAPI for backend development and React with TypeScript for the frontend. The project allows users to ask questions and get responses from a RAG-based system.
 
 Project Structure
-
-```
-JB/
-|----backend/
-|    |----routers/
-|        |----rag.py
-|    |----main.py
-|    |----data/
-|        |----Dataset1.xlsx
-|        |----Dataset2.xlsx
-|----frontend/
-|    |----src/
-|        |----components/
-|            |----QueryForm.tsx
-|            |----ResultsDisplay.tsx
-|        |----services/
-|            |----api.ts
-|        |----App.tsx
-|    |----public/
-|    |----package.json
-|    |----tsconfig.json
-|----README.md
-|----requirements.txt
-```
+   
+   ```
+      JB/
+      |----backend/
+      |    |----routers/
+      |        |----rag.py
+      |    |----main.py
+      |    |----data/
+      |        |----Dataset1.xlsx
+      |        |----Dataset2.xlsx
+      |----frontend/
+      |    |----src/
+      |        |----components/
+      |            |----QueryForm.tsx
+      |            |----ResultsDisplay.tsx
+      |        |----services/
+      |            |----api.ts
+      |        |----App.tsx
+      |    |----public/
+      |    |----package.json
+      |    |----tsconfig.json
+      |----README.md
+      |----requirements.txt
+   ```
 
 ## Installation and Setup
 
