@@ -38,6 +38,7 @@ Project Structure
 - Virtual Environment (venv)
 
 ### Backend Setup
+
 1. Clone the repository:
    ```bash
    git clone https://github.com/Khubaibakramshirani/BounceInsights-Coding-Challenge.git
