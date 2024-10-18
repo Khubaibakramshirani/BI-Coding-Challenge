@@ -11,7 +11,7 @@ frontend/node_modules/
 # production
 /build
 
-/myVenv
+Venv/
 
 # misc
 *.env
