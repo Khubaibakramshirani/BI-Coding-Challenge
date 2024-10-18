@@ -2,8 +2,8 @@
 from fastapi import FastAPI
 from backend.routers import rag
 from fastapi.middleware.cors import CORSMiddleware
-app = FastAPI()
 
+app = FastAPI()
 
 # Add CORS middleware configuration
 app.add_middleware(
