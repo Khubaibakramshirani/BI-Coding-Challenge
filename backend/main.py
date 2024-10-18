@@ -5,7 +5,6 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-
 # Add CORS middleware configuration
 app.add_middleware(
     CORSMiddleware,
@@ -19,7 +18,6 @@ app.add_middleware(
 @app.get("/")
 def read_root():
     return {"message": "Welcome to the RAG Query System"}
-
 
 # Include the RAG router
 app.include_router(rag.router_fast_api, prefix="/api")

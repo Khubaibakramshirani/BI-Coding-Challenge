@@ -5,7 +5,7 @@ This repository contains the implementation of a RAG (Retrieval-Augmented Genera
 
 # Project Structure
    ```markdown
-      JB/
+      BounceInsights/
       |----backend/
       |    |----routers/
       |        |----rag.py
