@@ -2,6 +2,7 @@
 from fastapi import FastAPI
 from backend.routers import rag
 from fastapi.middleware.cors import CORSMiddleware
+
 app = FastAPI()
 
 
@@ -13,6 +14,12 @@ app.add_middleware(
     allow_methods=["*"],  # Allow all HTTP methods
     allow_headers=["*"],  # Allow all headers
 )
+
+# Define a root route
+@app.get("/")
+def read_root():
+    return {"message": "Welcome to the RAG Query System"}
+
 
 # Include the RAG router
 app.include_router(rag.router_fast_api, prefix="/api")
