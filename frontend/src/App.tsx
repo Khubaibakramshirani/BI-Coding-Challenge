@@ -1,6 +1,7 @@
 // src/App.tsx
 import React, { useState } from 'react';
 import './App.css';
+import { BASE_API_URL } from './constants';  // Adjust the import path if necessary
 
 interface Message {
     text: string;
@@ -24,7 +25,7 @@ const App: React.FC = () => {
 
         try {
             // Fetch the response from the backend
-            const response = await fetch('http://127.0.0.1:8000/api/query', {
+            const response = await fetch(`${BASE_API_URL}/query`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
