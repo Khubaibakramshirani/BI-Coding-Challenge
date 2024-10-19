@@ -8,7 +8,10 @@ app = FastAPI()
 # Add CORS middleware configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"], # React app URL
+    allow_origins=allow_origins=[
+        "http://localhost:3000",  # Allow local development
+        "https://bounceinsights-coding-challenge.onrender.com"  # Replace with your actual Render URL
+    ],
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods
     allow_headers=["*"],  # Allow all headers
