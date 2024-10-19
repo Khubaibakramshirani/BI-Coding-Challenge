@@ -8,7 +8,7 @@ app = FastAPI()
 # Add CORS middleware configuration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=allow_origins=[
+    allow_origins=[
         "http://localhost:3000",  # Allow local development
         "https://bounceinsights-coding-challenge.onrender.com"  # Replace with your actual Render URL
     ],
