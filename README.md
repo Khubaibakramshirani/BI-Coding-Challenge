@@ -105,21 +105,14 @@ This repository contains the implementation of a RAG (Retrieval-Augmented Genera
          |--Repository: https://github.com/Khubaibakramshirani/BounceInsights-Coding-Challenge
          |--Branch: "main" or "render"
          |--Root Directory: 
-         |--Build Command:
+         |--Build Command: pip install -r requirements.txt
+         |--Start Command: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
    ```
-            ```bash
-               pip install -r requirements.txt
-            ```
-   ```markdown
-         |--Start Command:
-   ```
-            ```bash
-               uvicorn backend.main:app --host 0.0.0.0 --port $PORT
-            ```
-4. Environment Variable
-   |--Create OPENAI_API_KEY variable
+3. Environment Variable - Create two 
+```markdown
+   |--Create OPENAI_API_KEY variable with your openAI api key
    |--Create PORT=8000
-
+```
 5. Deploy Latest Commit. 
 6. Wait for it to start then go to your deployed URL
 
