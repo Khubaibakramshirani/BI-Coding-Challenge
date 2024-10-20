@@ -4,10 +4,7 @@
 This repository contains the implementation of a RAG (Retrieval-Augmented Generation) system using FastAPI for backend development and React with TypeScript for the frontend. The project allows users to ask questions and get responses from a RAG-based system.
 
 # Project Structure
-   ```markdown
-   BounceInsights/ ├── backend/ │ ├── pycache/ │ ├── data/ │ │ ├── Dataset 1 (Sustainability Research Results).xlsx │ │ ├── Dataset 2 (Christmas Research Results).xlsx │ │ └── faiss_document_store.db │ ├── routers/ │ │ ├── pycache/ │ │ └── rag.py │ ├── vectorstore/ │ ├── web/ │ │ ├── static/ │ │ ├── favicon.ico │ │ ├── index.html │ │ ├── manifest.json │ │ └── robots.txt │ └── main.py ├── frontend/ │ ├── node_modules/ │ ├── public/ │ ├── src/ │ │ ├── components/ │ │ │ ├── QueryForm.tsx │ │ │ └── ResultsDisplay.tsx │ │ ├── services/ │ │ │ └── api.ts │ │ ├── App.css │ │ ├── App.tsx │ │ ├── constants.ts │ │ ├── index.css │ │ ├── index.tsx │ │ ├── logo.svg │ │ ├── react-app-env.d.ts │ │ ├── reportWebVitals.ts │ │ └── setupTests.ts │ ├── package-lock.json │ ├── package.json │ ├── tsconfig.json │ ├── README.md │ └── build.sh ├── .gitignore ├── README.md └── requirements.txt
-```
-   
+
    ```markdown
       BounceInsights/
       |----backend/
@@ -108,21 +105,23 @@ This repository contains the implementation of a RAG (Retrieval-Augmented Genera
          |--Repository: https://github.com/Khubaibakramshirani/BounceInsights-Coding-Challenge
          |--Branch: "main" or "render"
          |--Root Directory: 
-         |--Build Command: 
+         |--Build Command:
+   ```
             ```bash
                pip install -r requirements.txt
             ```
-         |--Start Command: 
+   ```markdown
+         |--Start Command:
+   ```
             ```bash
                uvicorn backend.main:app --host 0.0.0.0 --port $PORT
             ```
-      ```
-3. Environment Variable
+4. Environment Variable
    |--Create OPENAI_API_KEY variable
    |--Create PORT=8000
 
-4. Deploy Latest Commit. 
-5. Wait for it to start 
+5. Deploy Latest Commit. 
+6. Wait for it to start then go to your deployed URL
 
 ## Usage
 
