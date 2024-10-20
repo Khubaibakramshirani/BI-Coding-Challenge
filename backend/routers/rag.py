@@ -30,7 +30,7 @@ llm = ChatOpenAI(model="gpt-4o-mini")  # Make sure the model is available for yo
 # sustainability_data_path = "/home/sparlay/Coding/JB/backend/data/Dataset 1 (Sustainability Research Results).xlsx"
 # christmas_data_path = "/home/sparlay/Coding/JB/backend/data/Dataset 2 (Christmas Research Results).xlsx"
 
-Updated dataset paths using relative paths from the current working directory
+#Updated dataset paths using relative paths from the current working directory
 sustainability_data_path = "backend/data/Dataset 1 (Sustainability Research Results).xlsx"
 christmas_data_path = "backend/data/Dataset 2 (Christmas Research Results).xlsx"
 
