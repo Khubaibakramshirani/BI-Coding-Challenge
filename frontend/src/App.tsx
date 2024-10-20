@@ -1,4 +1,3 @@
-// src/App.tsx
 import React, { useState } from 'react';
 import './App.css';
 import { BASE_API_URL } from './constants';  // Adjust the import path if necessary
@@ -19,7 +18,7 @@ const App: React.FC = () => {
         if (!question.trim()) return;
 
         // Add user's question to the chat
-        setMessages([...messages, { text: question, sender: 'user' }]);
+        setMessages(prevMessages => [...prevMessages, { text: question, sender: 'user' }]);
         setLoading(true);
         setError('');
 
@@ -34,8 +33,21 @@ const App: React.FC = () => {
             });
             const data = await response.json();
 
-            // Add the bot's response to the chat
-            setMessages([...messages, { text: question, sender: 'user' }, { text: data.result, sender: 'bot' }]);
+            // Create new messages array including the user's question and bot's response
+            const newMessages: Message[] = [
+                { text: data.result, sender: 'bot' }
+            ];
+
+            // If the response is "I don't know.", add an extra prompt for rephrasing
+            if (data.result.toLowerCase() === "i don't know.") {
+                newMessages.push({
+                    text: "Try rephrasing your question or using prompt engineering to improve clarity.",
+                    sender: 'bot'
+                });
+            }
+
+            // Update messages with the new responses
+            setMessages(prevMessages => [...prevMessages, ...newMessages]);
         } catch (err) {
             setError('Failed to fetch response. Please try again later.');
         } finally {
@@ -46,6 +58,9 @@ const App: React.FC = () => {
 
     return (
         <div className="app-container">
+            <h1 className="chat-heading">
+                RAG Chatbot: Data from Christmas Research Results and Sustainability Research Results
+            </h1>
             <div className="chat-box">
                 {messages.map((message, index) => (
                     <div key={index} className={`chat-bubble ${message.sender}`}>

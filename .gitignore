@@ -11,7 +11,9 @@ frontend/node_modules/
 # production
 /build
 
-Venv/
+venv/
+
+#backend/web
 
 # misc
 *.env
@@ -24,3 +26,6 @@ Venv/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+__pycache__/
+*.pyc
