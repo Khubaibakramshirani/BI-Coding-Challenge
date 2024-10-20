@@ -108,13 +108,15 @@ This repository contains the implementation of a RAG (Retrieval-Augmented Genera
          |--Build Command: pip install -r requirements.txt
          |--Start Command: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
    ```
+   
 3. Environment Variable - Create two 
 ```markdown
    |--Create OPENAI_API_KEY variable with your openAI api key
    |--Create PORT=8000
 ```
-5. Deploy Latest Commit. 
-6. Wait for it to start then go to your deployed URL
+
+4. Deploy Latest Commit. 
+5. Wait for it to start then go to your deployed URL
 
 ## Usage
 
