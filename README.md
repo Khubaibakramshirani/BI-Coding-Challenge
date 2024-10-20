@@ -5,6 +5,10 @@ This repository contains the implementation of a RAG (Retrieval-Augmented Genera
 
 # Project Structure
    ```markdown
+   BounceInsights/ ├── backend/ │ ├── pycache/ │ ├── data/ │ │ ├── Dataset 1 (Sustainability Research Results).xlsx │ │ ├── Dataset 2 (Christmas Research Results).xlsx │ │ └── faiss_document_store.db │ ├── routers/ │ │ ├── pycache/ │ │ └── rag.py │ ├── vectorstore/ │ ├── web/ │ │ ├── static/ │ │ ├── favicon.ico │ │ ├── index.html │ │ ├── manifest.json │ │ └── robots.txt │ └── main.py ├── frontend/ │ ├── node_modules/ │ ├── public/ │ ├── src/ │ │ ├── components/ │ │ │ ├── QueryForm.tsx │ │ │ └── ResultsDisplay.tsx │ │ ├── services/ │ │ │ └── api.ts │ │ ├── App.css │ │ ├── App.tsx │ │ ├── constants.ts │ │ ├── index.css │ │ ├── index.tsx │ │ ├── logo.svg │ │ ├── react-app-env.d.ts │ │ ├── reportWebVitals.ts │ │ └── setupTests.ts │ ├── package-lock.json │ ├── package.json │ ├── tsconfig.json │ ├── README.md │ └── build.sh ├── .gitignore ├── README.md └── requirements.txt
+```
+   
+   ```markdown
       BounceInsights/
       |----backend/
       |    |----routers/
