@@ -9,6 +9,14 @@
   font-family: Arial, sans-serif;
 }
 
+.chat-heading {
+  text-align: center;
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
 .chat-box {
   width: 70%;
   max-width: 900px;
