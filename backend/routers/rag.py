@@ -26,13 +26,13 @@ openai_api_key = os.getenv("OPENAI_API_KEY")
 # Initialize language model
 llm = ChatOpenAI(model="gpt-4o-mini")  # Make sure the model is available for your use
 
-# # Dataset paths
-sustainability_data_path = "/home/sparlay/Coding/JB/backend/data/Dataset 1 (Sustainability Research Results).xlsx"
-christmas_data_path = "/home/sparlay/Coding/JB/backend/data/Dataset 2 (Christmas Research Results).xlsx"
+# # # Dataset paths
+# sustainability_data_path = "/home/sparlay/Coding/JB/backend/data/Dataset 1 (Sustainability Research Results).xlsx"
+# christmas_data_path = "/home/sparlay/Coding/JB/backend/data/Dataset 2 (Christmas Research Results).xlsx"
 
-# Updated dataset paths using relative paths from the current working directory
-# sustainability_data_path = "backend/data/Dataset 1 (Sustainability Research Results).xlsx"
-# christmas_data_path = "backend/data/Dataset 2 (Christmas Research Results).xlsx"
+Updated dataset paths using relative paths from the current working directory
+sustainability_data_path = "backend/data/Dataset 1 (Sustainability Research Results).xlsx"
+christmas_data_path = "backend/data/Dataset 2 (Christmas Research Results).xlsx"
 
 # Load the datasets using absolute paths
 sustainability_loader = UnstructuredExcelLoader(sustainability_data_path)
