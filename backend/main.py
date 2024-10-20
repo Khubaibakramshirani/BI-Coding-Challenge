@@ -25,9 +25,11 @@ def read_root():
 
 # Include the RAG router
 app.include_router(rag.router_fast_api, prefix="/api")
-app.mount("/static", StaticFiles(directory="web/static"),
+
+app.mount("/static", StaticFiles(directory="web/static"), name="static")
+
 app.mount("/", StaticFiles(directory="web"), name="staticweb")
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("backend.main:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("backend.main:app", host="0.0.0.0", port=10000, reload=True)
