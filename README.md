@@ -6,7 +6,7 @@ This repository contains the implementation of a RAG (Retrieval-Augmented Genera
 # Project Structure
 
    ```markdown
-      BounceInsights/
+      BI/
       |----backend/
       |    |----routers/
       |        |----rag.py
