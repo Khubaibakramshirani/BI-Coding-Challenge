@@ -51,7 +51,7 @@ This repository contains the implementation of a RAG (Retrieval-Augmented Genera
 1. Clone the respository:
 
    ```bash
-   git clone https://github.com/Khubaibakramshirani/BounceInsights-Coding-Challenge.git
+   git clone https://github.com/Khubaibakramshirani/BI-Coding-Challenge.git
    cd BounceInsights-Coding-Challenge/backend
    ```
 
@@ -102,7 +102,7 @@ This repository contains the implementation of a RAG (Retrieval-Augmented Genera
          |--Region: Select Nearest Region
          |--Instance Type: Free
       Build and Deploy:
-         |--Repository: https://github.com/Khubaibakramshirani/BounceInsights-Coding-Challenge
+         |--Repository: https://github.com/Khubaibakramshirani/BI-Coding-Challenge
          |--Branch: "main" or "render"
          |--Root Directory: 
          |--Build Command: pip install -r requirements.txt
@@ -121,8 +121,8 @@ This repository contains the implementation of a RAG (Retrieval-Augmented Genera
 ## Usage
 
 1. Navigate to `http://localhost:8000` in your browser for local deployed
-2. For Live deployed on Render go to your deployed URL given by Render. If my web service name on Render is "bounceinsights-coding-challenge" then my deployed URl will look something like this 
-      For example, https://bounceinsights-coding-challenge.onrender.com
+2. For Live deployed on Render go to your deployed URL given by Render. If my web service name on Render is "BI-coding-challenge" then my deployed URl will look something like this 
+      For example, https://BI-coding-challenge.onrender.com
 2. Ask a question using the input box and submit.
 3. View the response displayed in a chat-like interface.
 
