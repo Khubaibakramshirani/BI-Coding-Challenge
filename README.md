@@ -52,7 +52,7 @@ This repository contains the implementation of a RAG (Retrieval-Augmented Genera
 
    ```bash
    git clone https://github.com/Khubaibakramshirani/BI-Coding-Challenge.git
-   cd BounceInsights-Coding-Challenge/backend
+   cd BI-Coding-Challenge/backend
    ```
 
 2. Create a virtual environment and activate it:
